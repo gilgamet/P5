@@ -9,7 +9,7 @@
 namespace App\Controller;
 
 
-use Cocur\Slugify\Slugify;
+use Cocur\Slugify;
 use App\Repository\PortfolioRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -39,14 +39,16 @@ class PortfolioController extends AbstractController
 
     /**
      * @Route("/portfolio", name="portfolio.index")
+     * @param PortfolioRepository $repository
      * @return Response
      */
 
-     public function index(): Response
+     public function index(PortfolioRepository $repository): Response
      {
-         $menu = "portfolio";
+         $portfolios = $repository->findAll();
          return $this->render("portfolio/index.html.twig", [
-            "current_menu" => $menu
+            "current_menu" => "portfolio",
+             "portfolios" => $portfolios
          ]);
      }
 

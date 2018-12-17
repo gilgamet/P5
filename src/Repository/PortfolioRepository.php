@@ -19,17 +19,13 @@ class PortfolioRepository extends ServiceEntityRepository
         parent::__construct($registry, Portfolio::class);
     }
 
-    // /**
-    //  * @return Portfolio[] Returns an array of Portfolio objects
-    //  */
     /*
-    public function findByExampleField($value)
+
+    public function findBylanguage($value): array
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
+            ->Where('p.language = :val')
             ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
             ->getQuery()
             ->getResult()
         ;
