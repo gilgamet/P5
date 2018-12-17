@@ -9,12 +9,34 @@
 namespace App\Controller;
 
 
+use Cocur\Slugify\Slugify;
+use App\Repository\PortfolioRepository;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class PortfolioController extends AbstractController
 {
+
+
+    /**
+     * PortfolioController constructor.
+     * @param PortfolioRepository $repository
+     */
+    private $repository;
+
+    /**
+     * @var ObjectManager
+     */
+    private $em;
+
+    public function __construct(PortfolioRepository $repository, ObjectManager $em)
+    {
+        $this->repository = $repository;
+        $this->em = $em;
+    }
+
     /**
      * @Route("/portfolio", name="portfolio.index")
      * @return Response
@@ -22,10 +44,26 @@ class PortfolioController extends AbstractController
 
      public function index(): Response
      {
-        $menu = "portfolio";
-        return $this->render("portfolio/index.html.twig", [
+         $menu = "portfolio";
+         return $this->render("portfolio/index.html.twig", [
             "current_menu" => $menu
          ]);
+     }
+
+    /**
+     *
+     * @Route("/portfolio/(slug)-(id)", name="portfolio.show" , requirements={"slug": "[a-z0-9\-]*"})
+     * @param $slug
+     * @param $id
+     * @return Response
+     */
+     public function show($slug, $id): Response
+     {
+        $portfolio = $this->repository->find($id);
+        return $this->render("property/show.html.twig", [
+                "portfolio" => $portfolio,
+                "current_menu" => "portfolio"
+            ]);
      }
 
 }

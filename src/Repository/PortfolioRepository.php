@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\P5;
+use App\Entity\Portfolio;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
- * @method P5|null find($id, $lockMode = null, $lockVersion = null)
- * @method P5|null findOneBy(array $criteria, array $orderBy = null)
- * @method P5[]    findAll()
- * @method P5[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Portfolio|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Portfolio|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Portfolio[]    findAll()
+ * @method Portfolio[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class P5Repository extends ServiceEntityRepository
+class PortfolioRepository extends ServiceEntityRepository
 {
     public function __construct(RegistryInterface $registry)
     {
-        parent::__construct($registry, P5::class);
+        parent::__construct($registry, Portfolio::class);
     }
 
     // /**
-    //  * @return P5[] Returns an array of P5 objects
+    //  * @return Portfolio[] Returns an array of Portfolio objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class P5Repository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?P5
+    public function findOneBySomeField($value): ?Portfolio
     {
         return $this->createQueryBuilder('p')
             ->andWhere('p.exampleField = :val')
