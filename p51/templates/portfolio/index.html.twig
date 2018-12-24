@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{%  block title "Mes réalisations" %}
+
+{% block body %}
+<div class="container">
+    <div class="row-flex">
+        {% for portfolio in portfolios %}
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{{  path('portfolio.show', {id: portfolio.id, slug: portfolio.slug}) }}">{{ portfolio.title }}</a>
+                    </h5>
+                    <p class="card-text">{{ portfolio.language }}<br/>
+                        {{ portfolio.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
