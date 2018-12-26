@@ -1,14 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title "Édition des projets"%}
-
 {% block body %}
     <div class="container mt-5">
-        <h2>Éditer le projet</h2>
+        <h2>Enregistrer un projet</h2>
         {{ form_start(form) }}
         {{ form_widget(form) }}
         <button class="btn btn-primary">Sauvegarder</button>
         {{ form_end(form) }}
     </div>
-
-{% endblock %}
+{%  endblock %}

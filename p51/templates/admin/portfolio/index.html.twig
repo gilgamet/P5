@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title 'Géstion Backend des projets' %}
+{% block title 'Gestion Backend des projets' %}
 
 {% block body %}
     <div class="container mt-5">
-        <h1>Géstion des projets</h1>
+        <h1>Gestion des projets</h1>
 
         <table class="table table-striped">
             <thead>
@@ -12,22 +12,27 @@
                     <th>Titre</th>
                     <th>Actions</th>
                 </tr>
+            </thead>
                 <tbody>
-                {% for portfolio in portfolios %}
-                <tr>
-                    <td>{{ portfolio.title }}
-                    </td>
-                    <td>
-                        <a href="{{ path('admin.portfolio.edit', {id: portfolio.id}) }}" class="btn btn-warning">Editer</a>
-                    </td>
-                    <td>
-                        <!--<a href="" class="btn btn-danger">Enregistrer un nouveau projet</a>-->
-                    </td>
-                </tr>
+                    {% for portfolio in portfolios %}
+                    <tr>
+                        <td>{{ portfolio.title }}
+                        </td>
+                        <td>
+                            <a href="{{ path('admin.portfolio.edit', {id: portfolio.id}) }}" class="btn btn-warning">Editer</a>
+                            <form method="post" action="{{ path('admin.portfolio.delete', {id: portfolio.id}) }}" style="display: inline-block">
+                                <input type="hidden" name="_method"  value="DELETE">
+                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ portfolio.id) }}">
+                                <button class="btn btn-danger">Supprimer</button>
+                            </form>
+                        </td>
+                    </tr>
                 {% endfor %}
                 </tbody>
-            </thead>
         </table>
+        <div class="text-right">
+            <a href="{{ path('admin.portfolio.new') }}" class='btn btn-primary'>Enregistrer un nouveau projet</a>
+        </div>
     </div>
 
 
