@@ -62,10 +62,10 @@ class PortfolioController extends AbstractController
     public function show(Portfolio $portfolio, string $slug): Response
     {
         if ($portfolio->getSlug() !== $slug) {
-            $this->redirectToRoute('portfolio.show',[
+            return $this->redirectToRoute('portfolio.show',[
                 'id' => $portfolio->getId(),
                 'slug' => $portfolio->getSlug()
-            ]);
+            ], 301);
         }
         return $this->render("portfolio/show.html.twig", [
             "portfolio" => $portfolio,
