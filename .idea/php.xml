@@ -103,6 +103,8 @@
       <path value="$PROJECT_DIR$/p51/vendor/psr/log" />
       <path value="$PROJECT_DIR$/p51/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/p51/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/p51/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/p51/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

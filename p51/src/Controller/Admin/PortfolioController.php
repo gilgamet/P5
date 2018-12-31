@@ -52,7 +52,7 @@ class PortfolioController extends AbstractController
     }
 
     /**
-     * @Route("/admin/portfolio/{id}", name="admin.portfolio.edit", methods="GET|POST")
+     * @Route("/admin/{id}", name="admin.portfolio.edit", methods="GET|POST")
      * @param Portfolio $portfolio
      * @param Request $request
      * @return Response
@@ -64,6 +64,7 @@ class PortfolioController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()){
             $this->em->flush();
+            $this->addFlash('success', 'Modifié avec succes');
             return $this->redirectToRoute('admin.portfolio.index');
         }
 
@@ -88,6 +89,7 @@ class PortfolioController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()){
             $this->em->persist($portfolio);
             $this->em->flush();
+            $this->addFlash("success", "Nouveau projet Crée");
             return $this->redirectToRoute('admin.portfolio.index');
         }
 
@@ -100,12 +102,16 @@ class PortfolioController extends AbstractController
     /**
      * @Route("/admin/portfolio/{id}", name="admin.portfolio.delete", methods="DELETE")
      * @param Portfolio $portfolio
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function delete(Portfolio $portfolio)
+    public function delete(Portfolio $portfolio, Request $request)
     {
-        $this->em->remove($portfolio);
-        $this->em->flush();
+        if ($this->isCsrfTokenValid('delete' . $portfolio->getId(), $request->get('_token'))){
+            $this->em->remove($portfolio);
+            $this->em->flush();
+            $this->addFlash('success', 'Suppression éffectué');
+        }
         return $this->redirectToRoute("admin.portfolio.index");
     }
 

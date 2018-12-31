@@ -5,6 +5,11 @@
 {% block body %}
     <div class="container mt-5">
         <h2>Éditer le projet</h2>
+        {%  for message in app.flashes('warning', 'error') %}
+            <div class="alert alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
         {{ form_start(form) }}
         {{ form_widget(form) }}
         <button class="btn btn-primary">Sauvegarder</button>

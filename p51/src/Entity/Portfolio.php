@@ -4,7 +4,7 @@ namespace App\Entity;
 
 use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PortfolioRepository")
  */
@@ -38,6 +38,10 @@ class Portfolio
     private $cahier_des_charges;
 
     /**
+     * @Assert\Url(
+     *     protocols = {"http", "https"},
+     *     message = "The url '{{ portfolio.url }}' is not a valid url, use http://"
+     *     )
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $url;
