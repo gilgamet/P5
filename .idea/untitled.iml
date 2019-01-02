@@ -29,8 +29,10 @@
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/facebook/webdriver" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/fig/link-util" />
+      <excludeFolder url="file://$MODULE_DIR$/p51/vendor/imagine/imagine" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/jms/metadata" />
+      <excludeFolder url="file://$MODULE_DIR$/p51/vendor/liip/imagine-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/ocramius/package-versions" />

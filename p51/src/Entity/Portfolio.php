@@ -5,12 +5,14 @@ namespace App\Entity;
 use Cocur\Slugify\Slugify;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Constraints as Assert;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PortfolioRepository")
+ * @UniqueEntity("title")
  * @Vich\Uploadable()
  */
 class Portfolio
@@ -30,6 +32,10 @@ class Portfolio
 
     /**
      * @var File|null
+     *
+     * @Assert\Image(
+     *     mimeTypes="image/jpeg"
+     * )
      * @Vich\UploadableField(mapping="portfolio_image", fileNameProperty="filename")
      */
     private $imageFile;
@@ -64,7 +70,8 @@ class Portfolio
     private $url;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true)
+     * @var \DateTime|null
      */
     private $updated_at;
 
@@ -186,10 +193,13 @@ class Portfolio
         return $this->updated_at;
     }
 
+    /**
+     * @param \DateTimeInterface $updated_at
+     * @return Portfolio
+     */
     public function setUpdatedAt(\DateTimeInterface $updated_at): self
     {
         $this->updated_at = $updated_at;
-
         return $this;
     }
 
