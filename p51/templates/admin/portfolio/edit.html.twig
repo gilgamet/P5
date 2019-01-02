@@ -11,7 +11,8 @@
             </div>
         {% endfor %}
         {{ form_start(form) }}
-        {{ form_widget(form) }}
+        <div class="col-md2">{{ form_row(form.imageFile) }}</div>
+        {{ form_rest(form) }}
         <button class="btn btn-primary">Sauvegarder</button>
         {{ form_end(form) }}
     </div>

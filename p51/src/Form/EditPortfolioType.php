@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Portfolio;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -26,6 +27,9 @@ class EditPortfolioType extends AbstractType
             ])
             ->add('url', null, [
                 'label' => 'lien du site'
+            ])
+            ->add('imageFile', FileType::class, [
+                'required' => false
             ])
         ;
     }
