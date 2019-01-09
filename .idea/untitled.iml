@@ -107,6 +107,7 @@
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/symfony/web-link" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/symfony/web-profiler-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/symfony/web-server-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/p51/vendor/symfony/webpack-encore-pack" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/vich/uploader-bundle" />

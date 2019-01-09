@@ -36,12 +36,15 @@ class ContactMail
 
     /**
      * @param Contact $contact
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
      */
     public function Mail(Contact $contact)
     {
         $message = (new \Swift_Message("Demande de contact :"))
             ->setFrom($contact->getEmail())
-            ->setTo('polyelec04@orange.fr')
+            ->setTo('gilgamet04@gmail.com')
             ->setReplyTo($contact->getEmail())
             ->setBody($this->renderer->render("emails/contact.html.twig",[
                 'contact' => $contact
