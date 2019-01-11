@@ -111,7 +111,7 @@
       <path value="$PROJECT_DIR$/p51/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/p51/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/p51/vendor/liip/imagine-bundle" />
-      <path value="$PROJECT_DIR$/p51/vendor/symfony/webpack-encore-pack" />
+      <path value="$PROJECT_DIR$/p51/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
