@@ -7,8 +7,11 @@
     "private": true,
     "scripts": {
         "dev-server": "encore dev-server",
-"dev": "encore dev",
-"watch": "encore dev --watch",
-"build": "encore production --progress"
-}
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1"
+    }
 }
