@@ -37,7 +37,7 @@ class PresentationController extends AbstractController
     }
 
     /**
-     * @Route("")
+     * @Route("/admin", name="admin.presentation.index")
      * @return Response
      */
     public function index(): Response
@@ -45,4 +45,14 @@ class PresentationController extends AbstractController
         $presentation = $this->Prepository->findAll();
         return $this->render('admin/presentation/index.html.twig', compact('presentation'));
     }
+
+    /**
+     * @Route("/admin.presentation.edit", name="admin.presentation.edit")
+     * @return Response
+     */
+    public function edit()
+    {
+        return $this->render('admin/presentation/edit.html.twig');
+    }
+
 }
