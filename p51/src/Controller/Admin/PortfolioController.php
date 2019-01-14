@@ -25,6 +25,7 @@ class PortfolioController extends AbstractController
      * @param PortfolioRepository $repository
      */
     private $repository;
+
     /**
      * @var ObjectManager
      */

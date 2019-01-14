@@ -9,18 +9,31 @@
 namespace App\Controller\Admin;
 
 
+use App\Repository\PresentationRepository;
 use Doctrine\Common\Persistence\ObjectManager;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class PresentationController
+class PresentationController extends AbstractController
 {
+    /**
+     * @var PresentationRepository
+     */
+    private $Prepository;
+    /**
+     * @var ObjectManager
+     */
+    private $em;
 
     /**
+     * @param PresentationRepository $Prepository
      * @param ObjectManager $em
      */
-    public function construct(ObjectManager $em)
+    public function __construct(PresentationRepository $Prepository, ObjectManager $em)
     {
-
+        $this->Prepository = $Prepository;
+        $this->em = $em;
     }
 
     /**
@@ -29,7 +42,7 @@ class PresentationController
      */
     public function index(): Response
     {
-        $presentation = $this->repository->findAll();
+        $presentation = $this->Prepository->findAll();
         return $this->render('admin/presentation/index.html.twig', compact('presentation'));
     }
 }
