@@ -3,5 +3,24 @@
 {% block title 'Gestion des images de présentation' %}
 
 {% block body %}
-
+    <div class="container">
+        <div class="row">
+            {% for presentation in presentations %}
+                <div class="col-6 mt-4">
+                    {%  if presentation.filename %}
+                        <img src="{{ vich_uploader_asset(presentation, 'imageFile')| imagine_filter('med') }}" alt="card-img-top" style="width: 100%; height: auto;">
+                    {% endif %}
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{  path('admin.presentation.index') }}">{{ presentation.title }}</a>
+                            </h5>
+                            <p class="card-text">{{ presentation.alt }}<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

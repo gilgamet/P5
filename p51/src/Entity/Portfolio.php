@@ -32,7 +32,6 @@ class Portfolio
 
     /**
      * @var File|null
-     *
      * @Assert\Image(
      *     mimeTypes="image/jpeg"
      * )

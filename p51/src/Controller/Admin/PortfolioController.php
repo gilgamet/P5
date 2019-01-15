@@ -69,7 +69,7 @@ class PortfolioController extends AbstractController
             return $this->redirectToRoute('admin.portfolio.index');
         }
 
-        return $this->render('admin/portfolio/edit.html.twig', [
+        return $this->render('admin/portfolio/new.html.twig', [
             'portfolio => $portfolio',
             'form' => $form->createView()
         ]);

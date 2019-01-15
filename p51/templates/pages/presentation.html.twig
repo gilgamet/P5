@@ -1,67 +1,8 @@
-<link rel="stylesheet" href="{{ asset('build/app.css') }}" />
+{% extends 'base.html.twig' %}
 
+{% block body %}
 <body class="bob">
     <div class="bon" id="app-growl"></div>
-
-    <nav class="ck pt adq py tk app-navbar">
-
-        <a class="e" href="index.html">
-            <img src="" alt="brand">
-        </a>
-
-        <button class="pp bpn vm" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="pq"></span>
-        </button>
-
-        <div class="collapse f" id="navbarResponsive">
-            <ul class="navbar-nav ahq">
-                <li class="pi active">
-                    <a class="pg" href="{{ path('home') }}">Accueil<span class="adt">(current)</span></a>
-                </li>
-                <li class="pi">
-                    <a class="pg" href="{{ path('portfolio.index') }}">Portfolio</a>
-                </li>
-                <li class="pi">
-                    <a class="pg" href="#">Presentation</a>
-                </li>
-                <li class="pi">
-                    <a class="pg" href="{{ path('contact')}}">Contact</a>
-                </li>
-                <li class="pi vm">
-                    <a class="pg" data-action="growl">Growl</a>
-                </li>
-                <li class="pi vm">
-                    <a class="pg" href="{{ path('logout') }}">Logout</a>
-                </li>
-
-            </ul>
-
-            <ul id="#js-popoverContent" class="nav navbar-nav acx aek d-none vt">
-                <li class="pi">
-                    <a class="g pg" href="notifications/index.html">
-                        <span class="h azy"></span>
-                    </a>
-                </li>
-                <li class="pi afb">
-                    <button class="cg bpo bpp boi" data-toggle="popover" data-original-title="" title="">
-                        <img class="us" src="">
-                    </button>
-                </li>
-            </ul>
-            {% if app.user %}
-            <ul class="nav navbar-nav d-none" id="js-popoverContent">
-                <li class="pi"><a class="pg" href="" data-action="growl">Growl</a></li>
-                <li class="pi"><a class="pg" href="{{ path('logout') }}">Se deconnecter</a></li>
-            </ul>
-            {% else %}
-            <ul class="nav navbar-nav d-none" id="js-popoverContent">
-                <li class="pi"><a class="pg" href="#" data-action="growl">Growl</a></li>
-                <li class="pi"><a class="pg" href="{{ path('login') }}">Se Connecter</a></li>
-            </ul>
-            {% endif %}
-        </div>
-    </nav>
-
     <div class="cd fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="bpq" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -344,7 +285,7 @@
         <div class="dp">
             <div class="fj">
                 <div class="pz bpi afo">
-                    <div class="qf" style="background-image: url(images/altavista.jpg);"></div>
+                    <div class="qf" style="background-image: url({{ absolute_url('/public/images/presentation/5c3df5d59493a844753673.jpg') }});"></div>
                     <div class="qa avz">
                         <a href="profile/index.html">
                             <img class="bpj" src="">
@@ -376,7 +317,7 @@
 
                 <div class="pz vp vy afo">
                     <div class="qa">
-                        <h6 class="afh">About {% if app.user %}<small>·  <a href="{{ path('admin.presentation.edit') }}">Edit</a></small>{% endif %}</h6>
+                        <h6 class="afh">About {% if app.user %}<small>·  <a href="">Edit</a></small>{% endif %}</h6>
                         <ul class="dc axg">
                             <li><span class="axc h ban aff"></span>Went to <a href="https://www.google.fr/maps/place/Trois-Rivi%C3%A8res,+QC,+Canada/@46.3728626,-72.6658291,12z/data=!3m1!4b1!4m5!3m4!1s0x4cc7c8cfcf1f467d:0xb9d6b0325e28c3d2!8m2!3d46.342982!4d-72.5420716">Trois rivieres, CA</a>
                             </li><li><span class="axc h bnc aff"></span>Became friends with <a href="https://www.instagram.com/polyelec/">Me</a>
@@ -389,9 +330,10 @@
 
                 <div class="pz vp vy afo">
                     <div class="qa">
-                        <h6 class="afh">Photos <small>· <a href="#">Edit</a></small></h6>
+                        <h6 class="afh">Photos {% if app.user %}<small>· <a href="{{ path('admin.presentation.new') }}">Edit</a></small>{% endif %}</h6>
+                        {% for presentation in presentations %}
                         <div data-grid="images" data-target-height="150"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
-                                <img data-width="640" data-height="640" data-action="zoom" src="" style="width: 114px; height: 115px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="{{ vich_uploader_asset(presentation, 'imageFile')| imagine_filter('med') }}" style="width: 114px; height: 115px;">
                             </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
                                 <img data-width="640" data-height="640" data-action="zoom" src="" style="width: 115px; height: 115px;">
                             </div><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
@@ -403,6 +345,7 @@
                             </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
                                 <img data-width="640" data-height="640" data-action="zoom" src="" style="width: 115px; height: 115px;">
                             </div></div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -571,3 +514,4 @@
         </div>
     </div>
     </body>
+{% endblock %}

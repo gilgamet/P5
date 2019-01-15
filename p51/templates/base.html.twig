@@ -9,42 +9,64 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="ck pt adq py tk app-navbar">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-        <li class="nav-item{% if current_menu is defined and current_menu == "home" %} active {% endif %}">
-            <a class="nav-link" href="{{ path("home") }}">Accueil</a>
-        </li>
-        <li class="nav-item{% if current_menu is defined and current_menu == "portfolios" %} active {% endif %}">
-            <a class="nav-link" href="{{ path("portfolio.index") }}">Portfolio</a>
-        </li>
-        <li class="nav-item{% if current_menu is defined and current_menu == "presentation" %} active {% endif %}">
-             <a class="nav-link" href="{{ path("presentation") }}">Présentation</a>
-        </li>
-        <li class="nav-item{% if current_menu is defined and current_menu == "contact" %} active {% endif %}">
-            <a class="nav-link" href="{{ path("contact") }}">Contact</a>
-        </li>
-    </ul>
-        {% if app.user %}
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="{{ path('logout') }}" class="nav-link">Se Deconnecter</a>
-                </li>
-            </ul>
-        {% else %}
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="{{ path('login') }}" class="nav-link">Se Connecter</a>
-                </li>
-            </ul>
-        {% endif %}
-  </div>
-</nav>
+            <a class="e" href="index.html">
+                <img src="" alt="brand">
+            </a>
+
+            <button class="pp bpn vm" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="pq"></span>
+            </button>
+
+            <div class="collapse f" id="navbarResponsive">
+                <ul class="navbar-nav ahq">
+                    <li class="pi active">
+                        <a class="pg" href="{{ path('home') }}">Accueil<span class="adt"></span></a>
+                    </li>
+                    <li class="pi">
+                        <a class="pg" href="{{ path('portfolio.index') }}">Portfolio</a>
+                    </li>
+                    <li class="pi">
+                        <a class="pg" href="/presentation">Presentation</a>
+                    </li>
+                    <li class="pi">
+                        <a class="pg" href="{{ path('contact')}}">Contact</a>
+                    </li>
+                    <li class="pi vm">
+                        <a class="pg" data-action="growl">Growl</a>
+                    </li>
+                    <li class="pi vm">
+                        <a class="pg" href="{{ path('logout') }}">Logout</a>
+                    </li>
+
+                </ul>
+
+                <ul id="#js-popoverContent" class="nav navbar-nav acx aek d-none vt">
+                    <li class="pi">
+                        <a class="g pg" href="notifications/index.html">
+                            <span class="h azy"></span>
+                        </a>
+                    </li>
+                    <li class="pi afb">
+                        <button class="cg bpo bpp boi" data-toggle="popover" data-original-title="" title="">
+                            <img class="us" src="">
+                        </button>
+                    </li>
+                </ul>
+                {% if app.user %}
+                    <ul class="nav navbar-nav d-none" id="js-popoverContent">
+                        <li class="pi"><a class="pg" href="" data-action="growl">Growl</a></li>
+                        <li class="pi"><a class="pg" href="{{ path('logout') }}">Se deconnecter</a></li>
+                    </ul>
+                {% else %}
+                    <ul class="nav navbar-nav d-none" id="js-popoverContent">
+                        <li class="pi"><a class="pg" href="#" data-action="growl">Growl</a></li>
+                        <li class="pi"><a class="pg" href="{{ path('login') }}">Se Connecter</a></li>
+                    </ul>
+                {% endif %}
+            </div>
+        </nav>
         {% block body %}{% endblock %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -9,9 +9,12 @@
 namespace App\Controller\Admin;
 
 
+use App\Entity\Presentation;
+use App\Form\PresentationType;
 use App\Repository\PresentationRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -37,22 +40,37 @@ class PresentationController extends AbstractController
     }
 
     /**
-     * @Route("/admin", name="admin.presentation.index")
+     * @Route("/admin.presentation.index", name="admin.presentation.index")
      * @return Response
      */
     public function index(): Response
     {
-        $presentation = $this->Prepository->findAll();
-        return $this->render('admin/presentation/index.html.twig', compact('presentation'));
+        $presentations = $this->Prepository->findAll();
+        return $this->render('admin/presentation/index.html.twig', compact('presentations'));
     }
 
     /**
-     * @Route("/admin.presentation.edit", name="admin.presentation.edit")
+     * @Route("/admin.presentation.new", name="admin.presentation.new")
+     * @param Request $request
      * @return Response
      */
-    public function edit()
+    public function new(Request $request)
     {
-        return $this->render('admin/presentation/edit.html.twig');
+        $presentation = new Presentation();
+        $form = $this->createForm(PresentationType::class, $presentation);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            $this->em->persist($presentation);
+            $this->em->flush();
+            $this->addFlash('success', 'Uploadé avec succes');
+            return $this->redirectToRoute('admin.presentation.index');
+        }
+
+            return $this->render('admin/presentation/new.html.twig', [
+                'presentation' => '$presentation',
+                'form' => $form->createView()
+            ]);
     }
 
 }
