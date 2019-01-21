@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 
+use App\Entity\Presentation;
 use App\Repository\PresentationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,10 +24,13 @@ class PresentationController extends AbstractController
      */
     public function index(PresentationRepository $repository): Response
     {
-        $presentations = $repository->findAll();
-        return $this->render('pages/presentation.html.twig',[
-            'presentations' => $presentations,
+        $prezeven = $this->$repository->findAllEven();
+        $prezodd = $this->$repository->findAllOdd();
+        return $this->render('pages/presentation.html.twig', [
+            'prezodd' => $prezodd,
+            'prezeven' => $prezeven,
             'current_menu' => 'presentation'
         ]);
+
     }
 }

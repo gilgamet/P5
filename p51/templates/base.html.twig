@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset("build/app.css") }}">
+        <script src="{{ asset('build/app.js') }}"></script>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -21,30 +22,23 @@
 
             <div class="collapse f" id="navbarResponsive">
                 <ul class="navbar-nav ahq">
-                    <li class="pi active">
+                    <li class="pi {% if current_menu is defined and current_menu == 'home' %}active{% endif %}">
                         <a class="pg" href="{{ path('home') }}">Accueil<span class="adt"></span></a>
                     </li>
-                    <li class="pi">
+                    <li class="pi {% if current_menu is defined and current_menu == 'portfolios' %}active{% endif %}">
                         <a class="pg" href="{{ path('portfolio.index') }}">Portfolio</a>
                     </li>
-                    <li class="pi">
-                        <a class="pg" href="/presentation">Presentation</a>
+                    <li class="pi {% if current_menu is defined and current_menu == 'presentation' %}active{% endif %}">
+                        <a class="pg" href="{{ path('presentation') }}">Presentation</a>
                     </li>
-                    <li class="pi">
+                    <li class="pi {% if current_menu is defined and current_menu == 'contact' %}active{% endif %}">
                         <a class="pg" href="{{ path('contact')}}">Contact</a>
                     </li>
-                    <li class="pi vm">
-                        <a class="pg" data-action="growl">Growl</a>
-                    </li>
-                    <li class="pi vm">
-                        <a class="pg" href="{{ path('logout') }}">Logout</a>
-                    </li>
-
                 </ul>
 
                 <ul id="#js-popoverContent" class="nav navbar-nav acx aek d-none vt">
                     <li class="pi">
-                        <a class="g pg" href="notifications/index.html">
+                        <a class="g pg" href="">
                             <span class="h azy"></span>
                         </a>
                     </li>
@@ -53,25 +47,18 @@
                             <img class="us" src="">
                         </button>
                     </li>
+                    {% if app.user %}
+                        <li class="pi "><a class="pg" href="{{ path('logout') }}">Se deconnecter</a></li>
+                    {% else %}
+                        <li class="pi {% if current_menu is defined and current_menu == 'login' %}active{% endif %}"><a class="pg" href="{{ path('login') }}">Se Connecter</a></li>
+                    {% endif %}
                 </ul>
-                {% if app.user %}
-                    <ul class="nav navbar-nav d-none" id="js-popoverContent">
-                        <li class="pi"><a class="pg" href="" data-action="growl">Growl</a></li>
-                        <li class="pi"><a class="pg" href="{{ path('logout') }}">Se deconnecter</a></li>
-                    </ul>
-                {% else %}
-                    <ul class="nav navbar-nav d-none" id="js-popoverContent">
-                        <li class="pi"><a class="pg" href="#" data-action="growl">Growl</a></li>
-                        <li class="pi"><a class="pg" href="{{ path('login') }}">Se Connecter</a></li>
-                    </ul>
-                {% endif %}
             </div>
         </nav>
         {% block body %}{% endblock %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="{{ asset('build/app.js') }}"></script>
         {% block javascripts %}{% endblock %}
 
     </body>

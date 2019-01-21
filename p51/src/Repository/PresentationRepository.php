@@ -19,25 +19,33 @@ class PresentationRepository extends ServiceEntityRepository
         parent::__construct($registry, Presentation::class);
     }
 
-    // /**
-    //  * @return Presentation[] Returns an array of Presentation objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
 
+    /**
+     * @return \Doctrine\ORM\QueryBuilder
+     */
+    public function findAllEven()
+    {
+        return $this->createQuery(
+            'SELECT p.* 
+            FROM App\Entity\Presentation p
+            WHERE p.id = (id%2 = 0');
+    }
+
+
+    /**
+     *
+     * @return Presentation|\Doctrine\ORM\QueryBuilder
+     */
+    public function findAllOdd()
+    {
+        return $this->createQuery(
+            'SELECT p.* 
+            FROM App\Entity\Presentation p
+            WHERE p.id = (id%2 = 1)');
+
+    }
     /*
-    public function findOneBySomeField($value): ?Presentation
+    public function findOneBySomeField($value): ?Portfolio
     {
         return $this->createQueryBuilder('p')
             ->andWhere('p.exampleField = :val')

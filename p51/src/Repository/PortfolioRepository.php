@@ -23,7 +23,7 @@ class PortfolioRepository extends ServiceEntityRepository
     //  * @return Portfolio[] Returns an array of Portfolio objects
     //  */
     /*
-    public function findByExampleField($value)
+    public function findByIdOdd($value)
     {
         return $this->createQueryBuilder('p')
             ->andWhere('p.exampleField = :val')
