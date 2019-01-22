@@ -11,6 +11,8 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  * @method Presentation|null findOneBy(array $criteria, array $orderBy = null)
  * @method Presentation[]    findAll()
  * @method Presentation[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method createQuery(string $string)
+ * @method getDoctrine()
  */
 class PresentationRepository extends ServiceEntityRepository
 {
@@ -19,31 +21,6 @@ class PresentationRepository extends ServiceEntityRepository
         parent::__construct($registry, Presentation::class);
     }
 
-
-    /**
-     * @return \Doctrine\ORM\QueryBuilder
-     */
-    public function findAllEven()
-    {
-        return $this->createQuery(
-            'SELECT p.* 
-            FROM App\Entity\Presentation p
-            WHERE p.id = (id%2 = 0');
-    }
-
-
-    /**
-     *
-     * @return Presentation|\Doctrine\ORM\QueryBuilder
-     */
-    public function findAllOdd()
-    {
-        return $this->createQuery(
-            'SELECT p.* 
-            FROM App\Entity\Presentation p
-            WHERE p.id = (id%2 = 1)');
-
-    }
     /*
     public function findOneBySomeField($value): ?Portfolio
     {

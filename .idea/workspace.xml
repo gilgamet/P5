@@ -4,26 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/p51/src/Controller/Admin/PortfolioController.php" line="115" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db066f35-b498-4696-bb31-85381b90406d" name="Default Changelist" comment="Page presentation .add et presentationtype fonctionnel">
-      <change afterPath="$PROJECT_DIR$/p51/public/images/presentation/5c3df5d59493a844753673.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p51/public/images/presentation/5c3e01db12fb4835548575.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p51/public/images/presentation/Thom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p51/public/images/presentation/islande.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p51/src/Form/PresentationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p51/src/Migrations/Version20190115091914.php" afterDir="false" />
+    <list default="true" id="db066f35-b498-4696-bb31-85381b90406d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/p51/public/images/presentation2/islande.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02a54050-f816-4264-927f-bb7b35713d14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/02a54050-f816-4264-927f-bb7b35713d14.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/p51/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/p51/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/pages/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +70,13 @@
         <item name="portfolio@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="portfolio: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="presentation2: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="portfolio@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="portfolio: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -90,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="735">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="e#34#62#0#PHP" expanded="true" />
               </folding>
@@ -105,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p51/src/Controller/PresentationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="367">
+              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
               <folding>
                 <element signature="e#120#148#0#PHP" expanded="true" />
               </folding>
@@ -115,22 +112,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p51/templates/pages/home.html.twig">
+        <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+            <state relative-caret-position="4095">
+              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+              <folding>
+                <element signature="e#30#43#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="130" selection-end-column="21" />
+              <folding>
+                <element signature="e#30#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="340" column="24" selection-start-line="340" selection-start-column="24" selection-end-line="340" selection-end-column="24" />
+            <state relative-caret-position="742">
+              <caret line="344" column="28" selection-start-line="344" selection-start-column="28" selection-end-line="344" selection-end-column="28" />
               <folding>
-                <element signature="e#17939#18014#0#HTML" expanded="true" />
+                <element signature="e#21128#21223#0#HTML" expanded="true" />
+                <element signature="e#21403#21439#0#HTML" expanded="true" />
+                <element signature="e#21472#21567#0#HTML" expanded="true" />
+                <element signature="e#21775#21811#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -164,6 +197,7 @@
       <find>buy</find>
       <find>vic</find>
       <find>Thom</find>
+      <find>presen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/p51/src/Controller/PortfolioController.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/p51/templates/admin/index.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/admin/edit.html.twig" />
@@ -206,7 +239,6 @@
         <option value="$PROJECT_DIR$/p51/assets/css/utils.css" />
         <option value="$PROJECT_DIR$/p51/src/Controller/Admin/PortfolioController.php" />
         <option value="$PROJECT_DIR$/p51/src/Entity/Portfolio.php" />
-        <option value="$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml" />
         <option value="$PROJECT_DIR$/p51/templates/admin/presentation/edit.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Entity/Presentation.php" />
         <option value="$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig" />
@@ -217,15 +249,17 @@
         <option value="$PROJECT_DIR$/p51/assets/js/app.js" />
         <option value="$PROJECT_DIR$/p51/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" />
-        <option value="$PROJECT_DIR$/p51/assets/css/app.css" />
         <option value="$PROJECT_DIR$/p51/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/p51/templates/portfolio/index.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php" />
         <option value="$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php" />
-        <option value="$PROJECT_DIR$/p51/templates/pages/home.html.twig" />
-        <option value="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" />
-        <option value="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" />
         <option value="$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php" />
+        <option value="$PROJECT_DIR$/p51/templates/pages/home.html.twig" />
+        <option value="$PROJECT_DIR$/p51/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/p51/src/Entity/Presentation2.php" />
+        <option value="$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" />
+        <option value="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" />
       </list>
     </option>
   </component>
@@ -353,10 +387,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1884" />
-    <option name="y" value="12" />
-    <option name="width" value="1848" />
-    <option name="height" value="1078" />
+    <option name="x" value="-1733" />
+    <option name="y" value="16" />
+    <option name="width" value="1372" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -366,7 +400,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -419,6 +452,14 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p51" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p51" type="462c0819:PsiDirectoryNode" />
+              <item name="p51" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p51" type="b2602c69:ProjectViewProjectNode" />
@@ -552,6 +593,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -572,17 +614,17 @@
     <property name="sql.rename.search.for.storage.occurrences" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Tests\p51\p51\assets\css" />
-      <recent name="C:\wamp64\www\Tests\p51\p51\assets\fonts" />
-      <recent name="C:\wamp64\www\Tests\p51\p51\templates\admin\portfolio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Tests\p51\p51\public\images\presentation2" />
       <recent name="C:\wamp64\www\Tests\p51\p51\public\images\presentation" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css\fonts" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css\images" />
-      <recent name="C:\wamp64\www\Tests\p51\p51\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Tests\p51\p51\assets\css" />
+      <recent name="C:\wamp64\www\Tests\p51\p51\assets\fonts" />
+      <recent name="C:\wamp64\www\Tests\p51\p51\templates\admin\portfolio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -646,7 +688,10 @@
       <workItem from="1547717026070" duration="122000" />
       <workItem from="1547717180675" duration="3801000" />
       <workItem from="1547799813687" duration="12329000" />
-      <workItem from="1548058008380" duration="14484000" />
+      <workItem from="1548058008380" duration="14612000" />
+      <workItem from="1548140776080" duration="487000" />
+      <workItem from="1548141550945" duration="6638000" />
+      <workItem from="1548168930540" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="Code fonctionnel">
       <created>1545649997717</created>
@@ -767,11 +812,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547570506023</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="implementation slider et requete entier">
+      <created>1548095249398</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1548095249398</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186498000" />
+    <option name="totallyTimeSpent" value="197100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,10 +835,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1884" y="12" width="1848" height="1078" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.18959731" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.15458423" />
       <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.11886994" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988764" weight="0.22234042" />
@@ -799,7 +851,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Favorites" order="10" weight="0.32917964" />
-      <window_info anchor="bottom" auto_hide="true" x="-952" y="201" width="320" height="829" id="Terminal" order="11" sideWeight="0.49382022" weight="0.11822126" />
+      <window_info anchor="bottom" auto_hide="true" x="-952" y="201" width="320" height="829" id="Terminal" order="11" sideWeight="0.49382022" weight="0.11702128" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5011236" side_tool="true" weight="0.22271715" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32917964" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49848714" weight="0.31950846" />
@@ -807,7 +859,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.12863535" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.14232409" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -872,7 +924,8 @@
     <MESSAGE value="Debut de presentation avec orm" />
     <MESSAGE value="Implementation des pages index et edit admin" />
     <MESSAGE value="Page presentation .add et presentationtype fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page presentation .add et presentationtype fonctionnel" />
+    <MESSAGE value="implementation slider et requete entier" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation slider et requete entier" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -886,21 +939,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/p51/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/assets/css/utils.css" />
-    <entry file="file://$PROJECT_DIR$/p51/templates/emails/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://02a54050-f816-4264-927f-bb7b35713d14/schema/portfolio/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -975,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://02a54050-f816-4264-927f-bb7b35713d14/schema/portfolio/table/presentation">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1024,54 +1055,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312340">
-          <caret line="8924" column="9" selection-start-line="8924" selection-start-column="9" selection-end-line="8924" selection-end-column="9" />
-          <folding>
-            <element signature="e#66644#66844#2" expanded="true" />
-            <element signature="e#66980#67129#2" expanded="true" />
-            <element signature="e#67486#67632#2" expanded="true" />
-            <element signature="e#67950#68116#1" expanded="true" />
-            <element signature="e#79591#79834#2" expanded="true" />
-            <element signature="e#80562#80811#2" expanded="true" />
-            <element signature="e#109842#110032#2" expanded="true" />
-            <element signature="e#110065#110255#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/islande.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/Bouffe.jpg" />
-    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c419ede0ba1b351100098.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3e01db12fb4835548575.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3df5d59493a844753673.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/p51/templates/portfolio/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1124,37 +1115,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="e#30#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/PortfolioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/p51/src/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
           <caret line="25" column="46" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1271">
-          <caret line="48" column="6" selection-start-line="36" selection-start-column="3" selection-end-line="48" selection-end-column="6" />
-          <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,39 +1152,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c41a173e665c628385350.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c419ede0ba1b351100098.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3df5d59493a844753673.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3e01db12fb4835548575.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="340" column="24" selection-start-line="340" selection-start-column="24" selection-end-line="340" selection-end-column="24" />
+        <state relative-caret-position="168">
+          <caret line="86" column="64" lean-forward="true" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Repository/Presentation2Repository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="e#17939#18014#0#HTML" expanded="true" />
+            <element signature="e#34#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/pages/home.html.twig">
+    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        <state relative-caret-position="595">
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Controller/PortfolioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="8924" column="10" selection-start-line="8924" selection-start-column="10" selection-end-line="8924" selection-end-column="10" />
+          <folding>
+            <element signature="e#66644#66844#2" expanded="true" />
+            <element signature="e#66980#67129#2" expanded="true" />
+            <element signature="e#67486#67632#2" expanded="true" />
+            <element signature="e#67950#68116#1" expanded="true" />
+            <element signature="e#79591#79834#2" expanded="true" />
+            <element signature="e#80562#80811#2" expanded="true" />
+            <element signature="e#109842#110032#2" expanded="true" />
+            <element signature="e#110065#110255#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#34#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/src/Controller/PresentationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="367">
+          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
           <folding>
             <element signature="e#120#148#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
+    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="4095">
+          <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
           <folding>
-            <element signature="e#34#62#0#PHP" expanded="true" />
+            <element signature="e#30#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/pages/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="130" selection-end-column="21" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="344" column="28" selection-start-line="344" selection-start-column="28" selection-end-line="344" selection-end-column="28" />
+          <folding>
+            <element signature="e#21128#21223#0#HTML" expanded="true" />
+            <element signature="e#21403#21439#0#HTML" expanded="true" />
+            <element signature="e#21472#21567#0#HTML" expanded="true" />
+            <element signature="e#21775#21811#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

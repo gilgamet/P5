@@ -10,6 +10,7 @@ namespace App\Controller;
 
 
 use App\Entity\Presentation;
+use App\Repository\Presentation2Repository;
 use App\Repository\PresentationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,17 +21,19 @@ class PresentationController extends AbstractController
     /**
      * @Route("/presentation", name="presentation")
      * @param PresentationRepository $repository
+     * @param Presentation2Repository $repository2
      * @return Response
      */
-    public function index(PresentationRepository $repository): Response
-    {
-        $prezeven = $this->$repository->findAllEven();
-        $prezodd = $this->$repository->findAllOdd();
+    public function index(PresentationRepository $repository, Presentation2Repository $repository2): Response
+    {   $presentation2 = $repository2->findAll();
+        $presentations = $repository->findAll();
         return $this->render('pages/presentation.html.twig', [
-            'prezodd' => $prezodd,
-            'prezeven' => $prezeven,
-            'current_menu' => 'presentation'
+            'presentation2' => $presentation2,
+            'current_menu' => 'presentation',
+            'presentations' => $presentations
         ]);
-
     }
+
+
+
 }
