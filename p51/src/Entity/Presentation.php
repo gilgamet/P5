@@ -2,11 +2,13 @@
 
 namespace App\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PresentationRepository")
  * @Vich\Uploadable()
@@ -126,7 +128,7 @@ class Presentation
     {
         $this->imageFile = $imageFile;
         if ($this->imageFile instanceof UploadedFile){
-            $this->uploaded_at = new \DateTime('now');
+            $this->uploaded_at = new DateTime('now');
         }
         return $this;
     }

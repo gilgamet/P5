@@ -11,8 +11,6 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  * @method Presentation|null findOneBy(array $criteria, array $orderBy = null)
  * @method Presentation[]    findAll()
  * @method Presentation[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
- * @method createQuery(string $string)
- * @method getDoctrine()
  */
 class PresentationRepository extends ServiceEntityRepository
 {
@@ -20,7 +18,37 @@ class PresentationRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Presentation::class);
     }
+    /**
 
+    public function findOddId():Query
+    {
+        $query = $this->FindId()->getQuery();
+        if ($query) {
+            $query = $query
+                ->where('prez.id %2 = 1');
+
+        }
+        return $query->getQuery();
+    }
+
+    public function findEvenId():Query
+    {
+        $query = $this->FindId()->getQuery();
+        if ($query) {
+            $query = $query
+                ->where('prez.id %2 = 0');
+
+        }
+        return $query->getQuery();
+    }
+
+
+    private function FindId() :QueryBuilder
+    {
+        return $this->createQueryBuilder('prez')
+            ->where('prez.id = :id');
+    }
+    */
     /*
     public function findOneBySomeField($value): ?Portfolio
     {

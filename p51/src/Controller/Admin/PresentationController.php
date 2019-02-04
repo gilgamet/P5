@@ -10,7 +10,9 @@ namespace App\Controller\Admin;
 
 
 use App\Entity\Presentation;
+use App\Entity\Presentation2;
 use App\Form\PresentationType;
+use App\Repository\Presentation2Repository;
 use App\Repository\PresentationRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -18,23 +20,32 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
 class PresentationController extends AbstractController
 {
     /**
      * @var PresentationRepository
      */
     private $Prepository;
+
     /**
      * @var ObjectManager
      */
     private $em;
 
     /**
+     * @var Presentation2RepositoryRepository
+     */
+    private $P2repository;
+
+    /**
      * @param PresentationRepository $Prepository
+     * @param Presentation2Repository $P2repository
      * @param ObjectManager $em
      */
-    public function __construct(PresentationRepository $Prepository, ObjectManager $em)
+    public function __construct(PresentationRepository $Prepository, Presentation2Repository $P2repository, ObjectManager $em)
     {
+        $this->P2repository = $P2repository;
         $this->Prepository = $Prepository;
         $this->em = $em;
     }
@@ -57,6 +68,7 @@ class PresentationController extends AbstractController
     public function new(Request $request)
     {
         $presentation = new Presentation();
+        $presentation2 = new Presentation2();
         $form = $this->createForm(PresentationType::class, $presentation);
         $form->handleRequest($request);
 
@@ -68,8 +80,10 @@ class PresentationController extends AbstractController
         }
 
             return $this->render('admin/presentation/new.html.twig', [
-                'presentation' => '$presentation',
-                'form' => $form->createView()
+                'presentation2' => $presentation2,
+                'presentation' => $presentation,
+                'form' => $form->createView(),
+                'csrf' => false,
             ]);
     }
 

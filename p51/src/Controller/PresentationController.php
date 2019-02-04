@@ -9,7 +9,6 @@
 namespace App\Controller;
 
 
-use App\Entity\Presentation;
 use App\Repository\Presentation2Repository;
 use App\Repository\PresentationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -25,10 +24,10 @@ class PresentationController extends AbstractController
      * @return Response
      */
     public function index(PresentationRepository $repository, Presentation2Repository $repository2): Response
-    {   $presentation2 = $repository2->findAll();
+    {   //$presentation2 = $repository2->findBy(['id' > 3]);
         $presentations = $repository->findAll();
         return $this->render('pages/presentation.html.twig', [
-            'presentation2' => $presentation2,
+            //'presentation2' => $presentation2,
             'current_menu' => 'presentation',
             'presentations' => $presentations
         ]);

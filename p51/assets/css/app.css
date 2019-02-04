@@ -8918,10 +8918,14 @@ img.zoom-img {
 html {
     font-size: 14px; }
 
-#contact{
-    margin: 5%;
+#contactForm, #contact{
+    margin-top: 5%;
 }
 
-#Presnew, #slider{
+#Presnew, #slider, #Preznew2{
     margin-top: 5%;
+}
+
+#btn-backend {
+    margin-top: 2%;
 }

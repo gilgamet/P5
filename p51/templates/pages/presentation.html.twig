@@ -333,17 +333,20 @@
 
                         <div data-grid="images" data-target-height="150"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
                                 {% for presentation in presentations %}
-                                <img data-width="640" data-height="640" data-action="zoom" src="{{  vich_uploader_asset(presentation, 'imageFile')| imagine_filter('med') }}" style="width: 114px; height: 115px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="{{  vich_uploader_asset(presentation, 'imageFile')| imagine_filter('thumb') }}" style="width: 114px; height: 115px;">
                             </div>
-                            {% endfor %}
                             <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
-                            {% for presentation in presentation2 %}
-                                <img data-width="640" data-height="640" data-action="zoom" src="{{ vich_uploader_asset(presentation2, 'imageFile')| imagine_filter('med') }}" style="width: 115px; height: 115px;">
-                        </div>
+                                <img data-width="640" data-height="640" data-action="zoom" src="{{ vich_uploader_asset(presentation, 'imageFile')| imagine_filter('thumb') }}" style="width: 115px; height: 115px;">
+                                {% endfor %}</div>
                             </div>
+                        </div>
                 </div>
-                            {% endfor %}
+
+            <div class="pz vp vy afo">
+                <div class="qa" id="weather">
+                    <h6 class="afh">Weather {% if app.user %}<small>·  <a href="">Edit</a></small>{% endif %}</h6>
                 </div>
+            </div>
             </div>
 
             <div class="fm">

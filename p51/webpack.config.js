@@ -51,5 +51,8 @@ Encore
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
 ;
+var config = Encore.getWebpackConfig();
 
-module.exports = Encore.getWebpackConfig();
+config.externals.jquery = 'jQuery';
+
+module.exports = config;
