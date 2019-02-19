@@ -53,7 +53,6 @@ class PortfolioController extends AbstractController
     }
 
     /**
-     *
      * @Route("/portfolios/{slug}-{id}", name="portfolio.show" , requirements={"slug": "[a-z0-9\-]*"})
      * @param Portfolio $portfolio
      * @param string $slug
