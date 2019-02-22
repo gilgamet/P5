@@ -14,7 +14,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use GuzzleHttp\Client;
-use Symfony\Component\Serializer\Serializer;
+use GuzzleHttp\Psr7\Request;
 
 class PresentationController extends AbstractController
 {
@@ -34,13 +34,7 @@ class PresentationController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/presentation", name="presentation")
-     * @param Serializer $serializer
-     * @return Response
-     * @throws \GuzzleHttp\Exception\GuzzleException
-     */
-    public function guzzle(Serializer $serializer)
+    public function guzzle()
         {
             $client = new Client([
                 // Base URI is used with relative requests
@@ -51,12 +45,13 @@ class PresentationController extends AbstractController
             if ($code !== 200){
                 return 'Erreur Reseau';
             }
-            $datas = $this->serializer->deserialize($response->getBody()->getContents(), 'array', 'json');
+            $body =$response->getBody();
+            echo $body;
             ;
             return $this->render('pages/presentation.html.twig', [
-                'temperature' => $datas["current.temp_c"],
-                'temperatureRessentie' => $datas["current.temp.feelslike_c"],
-                'wind' => $datas['current.wind_kph']
+                'temperature' => $body["current.temp_c"],
+                'temperatureRessentie' => $body["current.temp.feelslike_c"],
+                'wind' => $body['current.wind_kph']
             ]);
         }
 }

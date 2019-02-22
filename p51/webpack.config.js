@@ -23,7 +23,7 @@ Encore
 
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
-    .enableSingleRuntimeChunk()
+    //.enableSingleRuntimeChunk()
 
     /*
      * FEATURE CONFIG
@@ -45,14 +45,10 @@ Encore
     //.enableTypeScriptLoader()
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
 
-let config = Encore.getWebpackConfig();
-
-config.externals.jquery = 'jQuery';
-
-module.exports = config;
+module.exports = Encore.getWebpackConfig();
