@@ -345,11 +345,11 @@
             <div class="pz vp vy afo">
                 <div class="qa" id="weather">
                     <h6 class="afh">Weather {% if app.user %}<small>·  <a href="">Edit</a></small>{% endif %}</h6>
-                    <button id="weatherButton">Afficher la météo</button>
+                    <button id="weatherButton" class="btn btn-outline-primary" href="">Afficher la météo</button>
                     <div id="weatherdata" style="display: none;">
-                    <br/><p>Temperature: <span id="temperature"></span></p>
-                    <p>Temperature ressentie:  <span id="temperatureRess"></span></p>
-                    <p>Vent: <span id="Vent"></span></p>
+                    <br/><p>Temperature: <span id="temperature"></span> °C</p>
+                    <p>Temperature ressentie:  <span id="temperatureRess"></span> °C</p>
+                    <p>Vent: <span id="Vent"></span> Km/h</p>
                     <div data-grid="images" data-target-height="150"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
                             <img data-width="640" data-height="640" data-action="zoom" src="" style="width: 229px; height: 230px;"></div>
                     </div>

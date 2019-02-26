@@ -112,6 +112,15 @@
       <path value="$PROJECT_DIR$/p51/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/p51/vendor/liip/imagine-bundle" />
       <path value="$PROJECT_DIR$/p51/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/p51/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/p51/vendor/csa/guzzle-stopwatch-middleware" />
+      <path value="$PROJECT_DIR$/p51/vendor/csa/guzzle-history-middleware" />
+      <path value="$PROJECT_DIR$/p51/vendor/csa/guzzle-cache-middleware" />
+      <path value="$PROJECT_DIR$/p51/vendor/csa/guzzle-bundle" />
+      <path value="$PROJECT_DIR$/p51/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/promises" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

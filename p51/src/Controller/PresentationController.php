@@ -21,11 +21,12 @@ class PresentationController extends AbstractController
     /**
      * @Route("/presentation", name="presentation")
      * @param PresentationRepository $repository
+     * @param Presentation2Repository $repository2
      * @return Response
      */
     public function index(PresentationRepository $repository): Response
     {
-        //$presentation2 = $repository2->findBy(['id' > 3]);
+        //$presentation2 = $repository->findBy(['id' > 3]);
         $presentations = $repository->findAll();
         return $this->render('pages/presentation.html.twig', [
             //'presentation2' => $presentation2,
@@ -34,8 +35,14 @@ class PresentationController extends AbstractController
         ]);
     }
 
-    public function guzzle()
+    /**
+     * @param PresentationRepository $repository
+     * @return string|Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     *
+    public function guzzle(PresentationRepository $repository)
         {
+            $presentations = $repository->findAll();
             $client = new Client([
                 // Base URI is used with relative requests
                 'base_uri' => 'http://api.apixu.com/'
@@ -49,9 +56,10 @@ class PresentationController extends AbstractController
             echo $body;
             ;
             return $this->render('pages/presentation.html.twig', [
-                'temperature' => $body["current.temp_c"],
-                'temperatureRessentie' => $body["current.temp.feelslike_c"],
-                'wind' => $body['current.wind_kph']
+                $temperature = "body.current.temp_c",
+                $temperatureRessentie = "body.current.temp.feelslike_c",
+                $wind = "body.current.wind_kph",
+
             ]);
-        }
+        }*/
 }

@@ -43,9 +43,9 @@ class PresentationController extends AbstractController
      * @param Presentation2Repository $P2repository
      * @param ObjectManager $em
      */
-    public function __construct(PresentationRepository $Prepository, Presentation2Repository $P2repository, ObjectManager $em)
+    public function __construct(PresentationRepository $Prepository, ObjectManager $em)
     {
-        $this->P2repository = $P2repository;
+        //$this->P2repository = $P2repository;
         $this->Prepository = $Prepository;
         $this->em = $em;
     }
