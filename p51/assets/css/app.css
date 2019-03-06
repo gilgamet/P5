@@ -2,6 +2,11 @@
     background-color: #3097d1 !important;
 }
 
+#brand {
+    width: 46px;
+    height: 44px;
+}
+
 @charset "UTF-8";
 @media print {
     *,

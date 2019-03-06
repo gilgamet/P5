@@ -4,6 +4,8 @@ namespace App\Repository;
 
 use App\Entity\Portfolio;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query;
+use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
@@ -19,32 +21,18 @@ class PortfolioRepository extends ServiceEntityRepository
         parent::__construct($registry, Portfolio::class);
     }
 
-    // /**
-    //  * @return Portfolio[] Returns an array of Portfolio objects
-    //  */
     /*
-    public function findByIdOdd($value)
+     *  @return Query
+     */
+    public function findAllVisibleQuery(): Query
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('p.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+        return $this->findVisibleQuery()
+            ->getQuery();
     }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Portfolio
+    public function findVisibleQuery(): QueryBuilder
     {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+        return $this->createQueryBuilder('port')
+            ->where('port.id >= 0');
     }
-    */
 }

@@ -11,7 +11,9 @@ namespace App\Controller;
 use App\Entity\Portfolio;
 use App\Repository\PortfolioRepository;
 use Doctrine\Common\Persistence\ObjectManager;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -43,9 +45,13 @@ class PortfolioController extends AbstractController
      * @param PortfolioRepository $repository
      * @return Response
      */
-    public function index(PortfolioRepository $repository): Response
+    public function index(PortfolioRepository $repository, PaginatorInterface $paginator, Request $request): Response
     {
-        $portfolios = $repository->findAll();
+        $portfolios = $paginator->paginate(
+            $this->repository->findAllVisibleQuery(),
+            $request->query->getInt('page', 1),
+            4
+        );
         return $this->render("portfolio/index.html.twig", [
             "portfolios" => $portfolios,
             "current_menu" => 'portfolios'

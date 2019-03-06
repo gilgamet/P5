@@ -6,14 +6,15 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset("build/app.css") }}">
+        <link rel="icon" href="{{ asset('images/symfony.png') }}">
 
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         <nav class="ck pt adq py tk app-navbar">
 
-            <a class="e" href="index.html">
-                <img src="" alt="brand">
+            <a class="e" href="">
+                <img src="{{ asset('images/symfony.png') }}" id="brand" alt="Made with symfony 4.2">
             </a>
 
             <button class="pp bpn vm" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
