@@ -33,17 +33,12 @@ class PresentationController extends AbstractController
      */
     private $em;
 
-    /**
-     * @var Presentation2RepositoryRepository
-     */
-    private $P2repository;
 
     /**
      * @param PresentationRepository $Prepository
-     * @param Presentation2Repository $P2repository
      * @param ObjectManager $em
      */
-    public function __construct(PresentationRepository $Prepository, ObjectManager $em)
+    public function __construct(PresentationRepository $Prepository, /**Presentation2Repository $P2repository,*/ ObjectManager $em)
     {
         //$this->P2repository = $P2repository;
         $this->Prepository = $Prepository;
@@ -68,7 +63,7 @@ class PresentationController extends AbstractController
     public function new(Request $request)
     {
         $presentation = new Presentation();
-        $presentation2 = new Presentation2();
+        //$presentation2 = new Presentation2();
         $form = $this->createForm(PresentationType::class, $presentation);
         $form->handleRequest($request);
 
@@ -80,7 +75,8 @@ class PresentationController extends AbstractController
         }
 
             return $this->render('admin/presentation/new.html.twig', [
-                'presentation2' => $presentation2,
+                //'presentation2' => $presentation2,
+                "current_menu" => 'presentation',
                 'presentation' => $presentation,
                 'form' => $form->createView(),
                 'csrf' => false,

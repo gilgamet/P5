@@ -19,8 +19,9 @@ let Weather = {
     "temperature": $('#temperature'),
     "temperatureRess": $('#temperatureRess'),
     "vent": $("#Vent"),
+    "image": $('#imageIcon'),
 
-    // Initialisation de la map et des clusters
+    // Initialisation de la connexion api
     init: function () {
         Weather.apiWeather();
     },
@@ -43,7 +44,7 @@ let Weather = {
         req.send(null);
     },
 
-    //requete ajax et
+    //requete ajax
     apiWeather: function () {
         Weather.ajaxGet(Weather.ApiWeather, function (reponse) {
 
@@ -52,9 +53,16 @@ let Weather = {
             Weather.temperature.text(stations.current.temp_c);
             Weather.temperatureRess.text(stations.current.feelslike_c);
             Weather.vent.text(stations.current.wind_kph);
+            let ImageIcon = new Image(64, 64);
+            Weather.image.ImageIcon.src(stations.current.icon);
+
         })
 
+
+
     }
+
+
 }
 Weather.init();
 

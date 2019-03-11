@@ -36,7 +36,9 @@ class Presentation
     /**
      * @var File|null
      * @Assert\Image(
+     *     maxSize = "8000000",
      *     mimeTypes="image/jpeg"
+     *
      * )
      * @Vich\UploadableField(mapping="presentation_image", fileNameProperty="filename")
      */

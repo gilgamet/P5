@@ -4,18 +4,21 @@
     <bookmark url="file://$PROJECT_DIR$/p51/src/Controller/Admin/PortfolioController.php" line="115" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db066f35-b498-4696-bb31-85381b90406d" name="Default Changelist" comment="">
+    <list default="true" id="db066f35-b498-4696-bb31-85381b90406d" name="Default Changelist" comment="preparation weather api avec load jquery">
+      <change beforePath="$PROJECT_DIR$/.idea/P5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02a54050-f816-4264-927f-bb7b35713d14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/02a54050-f816-4264-927f-bb7b35713d14.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/.env" beforeDir="false" afterPath="$PROJECT_DIR$/p51/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/p51/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/p51/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/p51/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/p51/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/p51/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/src/Entity/Presentation.php" beforeDir="false" afterPath="$PROJECT_DIR$/p51/src/Entity/Presentation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +62,7 @@
         <item name="portfolio@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="portfolio: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="presentation2: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="presentation: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -69,54 +72,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p51/assets/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169708">
-              <caret line="8932" selection-start-line="8932" selection-end-line="8932" />
-              <folding>
-                <element signature="e#66644#66844#2" expanded="true" />
-                <element signature="e#66980#67129#2" expanded="true" />
-                <element signature="e#67486#67632#2" expanded="true" />
-                <element signature="e#67950#68116#1" expanded="true" />
-                <element signature="e#79591#79834#2" expanded="true" />
-                <element signature="e#80562#80811#2" expanded="true" />
-                <element signature="e#109842#110032#2" expanded="true" />
-                <element signature="e#110065#110255#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p51/src/Controller/PresentationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="e#119#162#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="509" column="47" selection-start-line="509" selection-start-column="47" selection-end-line="509" selection-end-column="47" />
+            <state relative-caret-position="205">
+              <caret line="334" column="208" selection-start-line="334" selection-start-column="208" selection-end-line="334" selection-end-column="208" />
+              <folding>
+                <element signature="e#21120#21215#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +117,9 @@
       <find>orm.yaml</find>
       <find>debug</find>
       <find>Xdebug</find>
+      <find>button</find>
+      <find>follow</find>
+      <find>upload_</find>
     </findStrings>
     <dirStrings>
       <dir>C:\wamp64\www\Tests\p51\p51\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations</dir>
@@ -165,14 +131,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/p51/templates/admin/index.html.twig" />
-        <option value="$PROJECT_DIR$/p51/templates/admin/edit.html.twig" />
         <option value="$PROJECT_DIR$/p51/config/packages/twig.yaml" />
         <option value="$PROJECT_DIR$/p51/templates/admin/portfolio/new.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/admin/portfolio/delete.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/admin/portfolio/index.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/p51/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/p51/config/routes.yaml" />
         <option value="$PROJECT_DIR$/p51/src/DataFixtures/UserFixtures.php" />
         <option value="$PROJECT_DIR$/p51/assets/style.css" />
@@ -184,7 +147,6 @@
         <option value="$PROJECT_DIR$/p51/templates/portfolio/show.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Form/ContactType.php" />
         <option value="$PROJECT_DIR$/p51/src/Entity/Contact.php" />
-        <option value="$PROJECT_DIR$/p51/src/Controller/ContactController.php" />
         <option value="$PROJECT_DIR$/p51/templates/emails/contact.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Controller/Mail/ContactMail.php" />
         <option value="$PROJECT_DIR$/p51/composer.lock" />
@@ -198,23 +160,27 @@
         <option value="$PROJECT_DIR$/../../../bin/php/php7.2.4/php.ini" />
         <option value="$PROJECT_DIR$/p51/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/p51/templates/security/login.html.twig" />
-        <option value="$PROJECT_DIR$/p51/src/Controller/HomeController.php" />
-        <option value="$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php" />
         <option value="$PROJECT_DIR$/p51/templates/pages/home.html.twig" />
         <option value="$PROJECT_DIR$/p51/config/packages/vich_uploader.yaml" />
         <option value="$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php" />
-        <option value="$PROJECT_DIR$/p51/src/Entity/Presentation.php" />
-        <option value="$PROJECT_DIR$/p51/templates/portfolio/index.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/pages/contact.html.twig" />
-        <option value="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Entity/Presentation2.php" />
-        <option value="$PROJECT_DIR$/p51/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/p51/webpack.config.js" />
         <option value="$PROJECT_DIR$/p51/.env" />
+        <option value="$PROJECT_DIR$/p51/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/p51/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php" />
-        <option value="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" />
+        <option value="$PROJECT_DIR$/p51/config/packages/knp_paginator.yml" />
+        <option value="$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/PortfolioController.php" />
+        <option value="$PROJECT_DIR$/p51/templates/portfolio/index.html.twig" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/p51/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/ContactController.php" />
+        <option value="$PROJECT_DIR$/p51/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php" />
+        <option value="$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig" />
+        <option value="$PROJECT_DIR$/p51/src/Entity/Presentation.php" />
+        <option value="$PROJECT_DIR$/p51/src/Controller/PresentationController.php" />
         <option value="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" />
       </list>
     </option>
@@ -229,7 +195,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php 7.2.4">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
     <include_path>
       <path value="$PROJECT_DIR$/p51/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/p51/vendor/fig/link-util" />
@@ -350,12 +316,15 @@
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/p51/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/p51/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1280" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1280" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -388,32 +357,28 @@
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P5" type="462c0819:PsiDirectoryNode" />
+              <item name="p51" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
@@ -441,7 +406,21 @@
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P5" type="462c0819:PsiDirectoryNode" />
+              <item name="p51" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P5" type="462c0819:PsiDirectoryNode" />
+              <item name="p51" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
@@ -461,36 +440,7 @@
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="emails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
@@ -513,12 +463,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -535,23 +479,24 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/p51" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="sql.rename.search.for.storage.occurrences" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/p51/public/images" />
       <recent name="C:\wamp64\www\Tests\p51\p51\public\images\presentation2" />
       <recent name="C:\wamp64\www\Tests\p51\p51\public\images\presentation" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css\fonts" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css" />
-      <recent name="C:\wamp64\www\Tests\p51\p51\assets\css\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/p51/public/images" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\css" />
       <recent name="C:\wamp64\www\Tests\p51\p51\assets\fonts" />
       <recent name="C:\wamp64\www\Tests\p51\p51\templates\admin\portfolio" />
@@ -647,6 +592,21 @@
       <workItem from="1551056912458" duration="2145000" />
       <workItem from="1551089667041" duration="1500000" />
       <workItem from="1551162940452" duration="706000" />
+      <workItem from="1551347857413" duration="3229000" />
+      <workItem from="1551461675636" duration="485000" />
+      <workItem from="1551462292032" duration="19000" />
+      <workItem from="1551462350875" duration="104000" />
+      <workItem from="1551462465639" duration="814000" />
+      <workItem from="1551774793698" duration="3941000" />
+      <workItem from="1551809533871" duration="615000" />
+      <workItem from="1551857301340" duration="4421000" />
+      <workItem from="1551948263096" duration="6353000" />
+      <workItem from="1552066260821" duration="517000" />
+      <workItem from="1552241180022" duration="2064000" />
+      <workItem from="1552290738112" duration="764000" />
+      <workItem from="1552294652935" duration="5514000" />
+      <workItem from="1552302120309" duration="1743000" />
+      <workItem from="1552307060264" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="Code fonctionnel">
       <created>1545649997717</created>
@@ -792,7 +752,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243893000" />
+    <option name="totallyTimeSpent" value="277036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,9 +764,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
+    <frame x="-1280" y="23" width="1280" height="697" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.17199148" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.20436187" />
+      <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.11886994" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988764" weight="0.22234042" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.32502595" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32561985" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Favorites" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" auto_hide="true" x="-952" y="201" width="320" height="829" id="Terminal" order="11" sideWeight="0.49201277" weight="0.4214876" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5079872" side_tool="true" weight="0.25785124" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32917964" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49848714" weight="0.31735536" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16720517" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.18796591" />
       <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.11886994" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988764" weight="0.22234042" />
@@ -819,8 +804,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Favorites" order="10" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="-952" y="201" width="320" height="829" id="Terminal" order="11" sideWeight="0.49254525" visible="true" weight="0.25906736" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50745475" side_tool="true" weight="0.25906736" />
+      <window_info anchor="bottom" auto_hide="true" x="-952" y="201" width="320" height="829" id="Terminal" order="11" sideWeight="0.49201277" weight="0.2580311" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5079872" side_tool="true" weight="0.2580311" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32917964" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49848714" weight="0.31813473" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="15" />
@@ -828,8 +813,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.115015976" />
-    </layout>
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16773163" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -915,39 +900,130 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/cache.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/prod/monolog.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/prod/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/dev/debug.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/dev/monolog.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bidule.php" />
-    <entry file="file://$PROJECT_DIR$/../Ma_bdd_de_film.php" />
-    <entry file="file://$PROJECT_DIR$/p51/templates/admin/portfolio/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/Presentation2Repository.php" />
-    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/p51/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../bin/php/php7.2.4/php.ini" />
-    <entry file="das://02a54050-f816-4264-927f-bb7b35713d14/schema/portfolio/table/presentation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/p51/config/routes/dev/web_profiler.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/webpack_encore.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/validator.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/twig.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/translation.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/sensio_framework_extra.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/dev/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/dev/swiftmailer.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/dev/web_profiler.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/config/packages/swiftmailer.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2535" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/portfolio/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Controller/Admin/PortfolioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Form/PresentationType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="e#119#155#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://02a54050-f816-4264-927f-bb7b35713d14/schema/portfolio/table/portfolio" />
+    <entry file="file://$PROJECT_DIR$/p51/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -958,214 +1034,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/Admin/PortfolioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-          <folding>
-            <element signature="e#126#151#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3df5d59493a844753673.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/config/packages/assets.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation2.php" />
-    <entry file="file://$PROJECT_DIR$/p51/src/Migrations/Version20190122152533.php" />
-    <entry file="file://$PROJECT_DIR$/p51/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c3e01db12fb4835548575.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/src/Migrations/Version20190115091914.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/symfony.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/Thom.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/.env.test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/pages/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-831" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/portfolio/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/portfolio/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-          <folding>
-            <element signature="e#34#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PortfolioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/islande.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/src/Entity/Presentation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
-          <folding>
-            <element signature="e#30#43#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="e#126#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Weather/Weather.php">
+    <entry file="file:///etc/php.ini">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="6" column="108" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="109" />
+    <entry file="das://02a54050-f816-4264-927f-bb7b35713d14/schema/portfolio/table/presentation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1203" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c8657a421fbc313843500.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/src/Controller/PortfolioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/templates/admin/presentation/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169708">
-          <caret line="8932" selection-start-line="8932" selection-end-line="8932" />
-          <folding>
-            <element signature="e#66644#66844#2" expanded="true" />
-            <element signature="e#66980#67129#2" expanded="true" />
-            <element signature="e#67486#67632#2" expanded="true" />
-            <element signature="e#67950#68116#1" expanded="true" />
-            <element signature="e#79591#79834#2" expanded="true" />
-            <element signature="e#80562#80811#2" expanded="true" />
-            <element signature="e#109842#110032#2" expanded="true" />
-            <element signature="e#110065#110255#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c864f033cbb9871809072.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/src/Controller/PresentationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#119#162#0#PHP" expanded="true" />
+            <element signature="e#165#207#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c419ede0ba1b351100098.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/src/Controller/Admin/PresentationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="509" column="47" selection-start-line="509" selection-start-column="47" selection-end-line="509" selection-end-column="47" />
+        <state relative-caret-position="205">
+          <caret line="334" column="208" selection-start-line="334" selection-start-column="208" selection-end-line="334" selection-end-column="208" />
+          <folding>
+            <element signature="e#21120#21215#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -11,6 +11,8 @@
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/p51/vendor/knplabs/knp-components" />
+      <excludeFolder url="file://$MODULE_DIR$/p51/vendor/knplabs/knp-paginator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/p51/vendor/ralouphie/getallheaders" />
     </content>

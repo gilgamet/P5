@@ -121,6 +121,8 @@
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/p51/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/p51/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/p51/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
