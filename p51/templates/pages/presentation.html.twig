@@ -329,7 +329,8 @@
 
 				<div class="pz vp vy afo">
 					<div class="qa">
-						<h6 class="afh">Photos {% if app.user %}<small>· <a href="{{ path('admin.presentation.new') }}">Edit</a></small>{% endif %}</h6>
+						<h6 class="afh">Photos {% if app.user %}<small>. <a href="{{ path('admin.presentation.new') }}">Edit</a> <a href="{{ path('admin.presentation.index') }}">Index</a></small></h6>{% endif %}
+
 						{% for presentation in presentations %}
 							<div data-grid="images" data-target-height="300"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
 								<img data-width="640" data-height="640" data-action="zoom" src="{{  vich_uploader_asset(presentation, 'imageFile')| imagine_filter('thumb') }}" style="width: 228px; height: 230px;">
