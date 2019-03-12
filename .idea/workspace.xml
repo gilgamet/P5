@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db066f35-b498-4696-bb31-85381b90406d" name="Default Changelist" comment="preparation weather api avec load jquery">
-      <change afterPath="$PROJECT_DIR$/p51/public/images/20181116_131211.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/pages/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p51/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/p51/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,18 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="169651">
               <caret line="8929" column="40" selection-start-line="8929" selection-start-column="40" selection-end-line="8929" selection-end-column="40" />
-              <folding>
-                <element signature="e#66644#66844#2" expanded="true" />
-                <element signature="e#66980#67129#2" expanded="true" />
-                <element signature="e#67486#67632#2" expanded="true" />
-                <element signature="e#67950#68116#1" expanded="true" />
-                <element signature="e#79591#79834#2" expanded="true" />
-                <element signature="e#80562#80811#2" expanded="true" />
-                <element signature="e#109842#110032#2" expanded="true" />
-                <element signature="e#110065#110255#2" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -89,14 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="335" column="237" selection-start-line="335" selection-start-column="237" selection-end-line="335" selection-end-column="237" />
-              <folding>
-                <element signature="e#13669#13705#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="520">
+              <caret line="346" column="113" lean-forward="true" selection-start-line="346" selection-start-column="113" selection-end-line="346" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/p51/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -148,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/p51/config/packages/twig.yaml" />
         <option value="$PROJECT_DIR$/p51/templates/admin/portfolio/delete.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/admin/portfolio/index.html.twig" />
         <option value="$PROJECT_DIR$/p51/src/Entity/User.php" />
@@ -199,6 +192,7 @@
         <option value="$PROJECT_DIR$/p51/assets/css/app.css" />
         <option value="$PROJECT_DIR$/p51/templates/pages/home.html.twig" />
         <option value="$PROJECT_DIR$/p51/templates/pages/presentation.html.twig" />
+        <option value="$PROJECT_DIR$/p51/.gitignore" />
       </list>
     </option>
   </component>
@@ -338,7 +332,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -361,128 +355,6 @@
               <item name="P5" type="b2602c69:ProjectViewProjectNode" />
               <item name="P5" type="462c0819:PsiDirectoryNode" />
               <item name="p51" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P5" type="462c0819:PsiDirectoryNode" />
-              <item name="p51" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -628,6 +500,7 @@
       <workItem from="1552294652935" duration="5514000" />
       <workItem from="1552302120309" duration="1743000" />
       <workItem from="1552307060264" duration="2560000" />
+      <workItem from="1552404646366" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="Code fonctionnel">
       <created>1545649997717</created>
@@ -773,7 +646,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281561000" />
+    <option name="totallyTimeSpent" value="282238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,10 +658,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.17838125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.1799787" />
       <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.11886994" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988764" weight="0.22234042" />
@@ -1048,7 +921,6 @@
     <entry file="file://$PROJECT_DIR$/p51/src/Repository/PresentationRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/p51/public/images/presentation/5c419ede0ba1b351100098.jpg" />
     <entry file="file://$PROJECT_DIR$/p51/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
@@ -1129,18 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="169651">
           <caret line="8929" column="40" selection-start-line="8929" selection-start-column="40" selection-end-line="8929" selection-end-column="40" />
-          <folding>
-            <element signature="e#66644#66844#2" expanded="true" />
-            <element signature="e#66980#67129#2" expanded="true" />
-            <element signature="e#67486#67632#2" expanded="true" />
-            <element signature="e#67950#68116#1" expanded="true" />
-            <element signature="e#79591#79834#2" expanded="true" />
-            <element signature="e#80562#80811#2" expanded="true" />
-            <element signature="e#109842#110032#2" expanded="true" />
-            <element signature="e#110065#110255#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,11 +1015,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/p51/templates/pages/presentation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="335" column="237" selection-start-line="335" selection-start-column="237" selection-end-line="335" selection-end-column="237" />
-          <folding>
-            <element signature="e#13669#13705#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="520">
+          <caret line="346" column="113" lean-forward="true" selection-start-line="346" selection-start-column="113" selection-end-line="346" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p51/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
